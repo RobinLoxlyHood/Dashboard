@@ -291,7 +291,7 @@ def main():
         st.warning("Please enter a username dan password")
     if authentication_status:    
         st.title(APP_TITLE)
-        data_df = pd.read_csv("Dashboard Tanpa Filter/data/data.csv")
+        data_df = pd.read_csv("data.csv")
         replacement_mapping_dict = {
             "DIYOGYAKARTA" : "DI YOGYAKARTA",
             "DKIJAKARTA" : "DKI JAKARTA",
