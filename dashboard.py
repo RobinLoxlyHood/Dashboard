@@ -281,7 +281,7 @@ def main():
         hashed_passwords=pickle.load(file)
     
     authenticator = stauth.Authenticate(names, usernames, hashed_passwords, 
-                                           "Ini APA", "abcd", cookie_expiry_days=30)
+                                           "Ini APA", "abcd", cookie_expiry_days=365)
     
     name, authentication_status, username = authenticator.login("Login", "main")
     
